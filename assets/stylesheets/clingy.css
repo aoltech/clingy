@@ -1,0 +1,129 @@
+/*
+
+Clingy
+
+Copyright (c) 2013, AOL Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Neither the name of AOL nor the names of its contributors may be
+   used to endorse or promote products derived from this software without
+   specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+.hide {
+    display: none;
+}
+
+#image-gallery {
+position: fixed;
+background: #fff;
+border-top: 1px solid;
+height: 75px;
+width: 100%;
+z-index: 10;
+bottom: -86px;
+padding: 5px;
+width: 100%;
+}
+
+#image-gallery img {
+max-width: 75px;
+max-height: 75px;
+border: 1px solid;
+}
+
+.file-thumbnails img {
+max-width: 60px;
+margin: 5px;
+border: 1px solid;
+max-height: 60px;
+}
+
+#image-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.image-attachment {
+float: left;
+margin: 0px 3px;
+}
+
+#image-attachment img:hover,  .file-thumbnails img:hover {
+    cursor: pointer;
+}
+
+#image-strip {
+overflow-x: scroll;
+overflow-y: hidden;
+white-space:nowrap
+}
+
+
+#lightbox {
+position: fixed;
+text-align: center;
+width: 100%;
+top: 0px;
+height: 100%;
+background-color: rgba(0,0,0,.8);
+padding-top: 2%;
+z-index: 9;
+}
+
+#lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+#close-lightbox {
+position: fixed;
+top: 10px;
+right: 10px;
+background: #ff0000;
+color: #ffffff;
+padding: 5px 9px 5px 9px;
+border-radius: 19px;
+border: 3px solid;
+text-transform: uppercase;
+}
+
+#tab {
+position: absolute;
+right: 32px;
+top: -26px;
+background: #fff;
+padding: 5px 10px 4px 10px;
+border: 1px solid;
+border-bottom-color: #fff;
+}
+
+#tab:hover {
+    cursor: pointer;
+}
+
+img.selected {
+    border: 2px solid #F9D423 !important;
+}
